@@ -1,0 +1,45 @@
+body{
+background-color: #2d3250;
+color: #ffff;
+text-align: center;
+width: 100vw;
+height: 100vh;
+
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+    width: 30vw;
+    margin-left: 6em;
+    margin-top: 5em;
+    
+}
+
+input{
+    background-color: #676f9d;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+   
+}
+
+button{
+    background-color: #f9b17a;
+    color: #ffff   ;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1em;
+    height: 40px;
+  
+}
+
+.resultado{
+    color: #ffff;
+    background-color: #f9b17a;
+    float: right;
+    margin-right: 10em;
+   
+}

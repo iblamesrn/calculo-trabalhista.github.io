@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculo Trabalhista</title>
+</head>
+<body>
+
+    <h1>Calculo Trabalhista</h1>
+
+    <div class="user">
+
+        <h2>Para realizar o cálculo do seu salário responda as perguntas abaixo:</h2>
+
+        <label>Informe o valor da hora trabalhada</label>
+        <input id="valorHora" type="text">
+
+        <label>Informe a quantidade de horas trabalhadas</label>
+        <input id="QTEhora" type="text">
+
+        <label>Possui vale-transporte 
+            <input  name="VT" type="radio" id="sim" class="radio">SIM
+            <input  name="VT" type="radio" id="nao" class="radio">Não
+        </label>
+
+        <label>Outras deduções</label>
+        <input id="outrasDEdu" type="text">
+
+        <button onclick="calcular()">Calcular</button>
+
+    </div>
+
+    <div class="resultado">
+
+        <p >Salário Bruto:<span id="slBrutoR"></span></p>
+        <p >Desconto INSS:<span id="descINSSR"></span></p>
+        <p >Desconto IRPF:<span id="descIRPFR"></span></p>
+        <p >Desconto Vale-Transporte:<span id="descVTR"></span></p>
+        <p >Outras Deduções:<span id="outrasDedu"></span></p>
+        <p>Salário Líquido:<span  id="slLIquidoR"></span></p>
+
+    </div>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
