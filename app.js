@@ -1,8 +1,8 @@
-var valorHora = parseFloat(document.getElementById('valorHora').value);
-var QTEhora = parseFloat(document.getElementById('QTEhora').value);
-var outrasDEdu = parseFloat(document.getElementById('outrasDEdu').value);
-
 function calcular() {
+    var valorHora = parseFloat(document.getElementById('valorHora').value);
+    var QTEhora = parseFloat(document.getElementById('QTEhora').value);
+    var outrasDEdu = parseFloat(document.getElementById('outrasDEdu').value) || 0;
+
     if (QTEhora === 0) {
         window.location.reload();
         return;
@@ -39,7 +39,7 @@ function calcular() {
 
     var descVT = 0;
     var sim = document.getElementById('sim');
-    
+
     if (sim.checked) {
         descVT = slBruto * 0.06;
     }
@@ -54,3 +54,4 @@ function calcular() {
     document.getElementById('outrasDedu').textContent = outrasDEdu.toFixed(2);
     document.getElementById('slLIquidoR').textContent = slLiquido.toFixed(2);
 }
+
